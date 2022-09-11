@@ -8,15 +8,17 @@
                   <div class="login-form">
                       <div class="sign-in-htm">
                           <div class="group">
+                            <i class="fas fa-user"></i>
                               <label for="user" class="label">Username</label>
-                              <input id="user" type="text" class="input">
+                              <input id="user" type="text" class="input" >
                           </div>
                           <div class="group">
+                            <i class="fas fa-lock"></i>
                               <label for="pass" class="label">Password</label>
-                              <input id="pass" type="password" class="input" data-type="password">
+                              <input id="pass" type="password" class="input" data-type="password" >
                           </div>
                           <div class="group">
-                              <input id="check" type="checkbox" class="check" checked>
+                              <input id="check" type="checkbox" class="check" >
                               <label for="check"><span class="icon"></span> Keep me Signed in</label>
                           </div>
                           <div class="group">
@@ -43,51 +45,72 @@
                           </div>
                           
                       </div>
+
                       <div class="sign-up-htm">
                           <form #register="ngForm" (ngSubmit)="Adduser()">
                             <div class="group">
                               <label for="Name" class="label">Name</label>
                               <input id="Name" type="text" name="namefield" [(ngModel)]="user.name" class="input">
                           </div>
+
                           <div class="group">
                               <label for="registerno" class="label">RegisterNumber</label>
-                              <input id="registerno" name="register" [(ngModel)]="user.registerNumber" type="text" class="input" >
+                              <input id="registerno" name="register" [(ngModel)]="user.registerNumber" type="text" class="input"  >
                           </div>
+
                           <div class="group">
                               <label for="addr" class="label">Address</label>
-                              <textarea [(ngModel)]="user.address" name="addr" id="9" cols="" rows="" class="textarea"></textarea>
+                              <textarea [(ngModel)]="user.address" name="addr" id="9" cols="" rows="" class="textarea" ></textarea>
                           </div>
+
                           <div class="group">
                               <label for="dept" class="label">Department</label>
-                              <input id="dept" type="text" name="deptment" [(ngModel)]="user.department" class="input">
+                              <input id="dept" type="text" name="deptment" [(ngModel)]="user.department" class="input" >
                           </div>
+
                           <div class="group">
                               <label for="sem" class="label">Semester</label>
-                              <input id="sem" type="text" name="semester" [(ngModel)]="user.semester" class="input">
+                              <input id="sem" type="text" name="semester" [(ngModel)]="user.semester" class="input" >
                           </div>
+
                           <div class="group">
                               <label for="board" class="label">BoardingPoint</label>
-                              <select id="board" type="text" name="bpoint" [(ngModel)]="user.boardingPoint" class="select">
-                                  <option value="1">Trivandrum</option>
-                                  <option value="2">Neyyattinkara</option>
-                                  <option value="3">Maranalloor</option>
-                                  <option value="4">Balaramapuram</option>
+                              <select id="board" type="text" name="bpoint" [(ngModel)]="user.boardingPoint" class="select" >
+                                  <option value="2">Trivandrum</option>
+                                  <option value="3">Neyyattinkara</option>
+                                  <option value="4">Maranalloor</option>
+                                  <option value="5">Balaramapuram</option>
                               </select>
                           </div>
+                           <div class="group">
+                            <i class="fas fa-user"></i>
+                            <label for="user" class="label">Username</label>
+                            <input id="user" type="text" class="input" >
+                           </div>
                           <div class="group">
+                            <i class="fas fa-envelope"></i>
+                            <label for="email" class="label">Emailid</label>
+                            <input type="email" name="email" id="id" [(ngModel)]="user.emailid" class="input">
+                          </div>
+                        
                               <div class="group">
+                                <i class="fas fa-lock"></i>
                                   <label for="pass" class="label">Password</label>
-                                  <input id="pass" type="password" name="password" [(ngModel)]="user.password" class="input" data-type="password">
+                                  <input id="pass" type="password" name="password" [(ngModel)]="user.password" class="input" data-type="password" >
                               </div>
-                          </div>
-                          <div class="group">
+                        
+
                               <div class="group">
+                                <i class="fas fa-lock"></i>
                                   <label for="conformpass" class="label">ConformPassword</label>
-                                  <input id="conformpass" type="password" name="cpass" [(ngModel)]="user.confirmPassword" class="input" data-type="password">
+                                  <input id="conformpass" type="password" name="cpass" [(ngModel)]="user.confirmPassword" class="input" data-type="password" >
                               </div>
-                          </div>
+                      
                           <div class="group">
-                            <button class="btn btn-primary">Register</button>
+                            <input type="submit" class="button" value="signup" >
+                          </div>
+                          <div class="foot-lnk">
+                            <label for="tab-1">Already Member?</label>
                           </div>
                           </form>
                       </div>

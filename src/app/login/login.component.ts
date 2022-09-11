@@ -14,6 +14,7 @@ export class LoginComponent implements OnInit {
     department:"",
     semester:"",
     boardingPoint:"",
+    emailid:"",
     password:"",
     confirmPassword:""
   }
